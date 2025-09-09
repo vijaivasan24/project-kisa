@@ -21,7 +21,7 @@ export default defineConfig({
   server: {
     host: '0.0.0.0',
     port: 5000,
-    allowedHosts: ['localhost', '.replit.dev', '.pike.replit.dev'],
+    allowedHosts: true,
     proxy: {
       '/api': {
         target: 'http://localhost:9002',
